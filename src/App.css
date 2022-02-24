@@ -1,38 +1,103 @@
-.App {
-  text-align: center;
+body {
+  font-family: sans-serif;
+  color:#2f3640;
 }
+      
+      
+      .App {
+        padding: 10px;  
+        background: #f5f6fa;
+        min-height: 100vh;
+        height: 100%;   
+        width: 600px;     
+      }
+      
+      details {
+          border: 1px solid ;
+          border-radius: 4px;
+          padding: .5em .5em 0;
+          margin: 30px 0 40px 0;
+      }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
+      summary {
+          font-weight: bold;
+          margin: -.5em -.5em 0;
+          padding: .5em;
+          color: #222f3e;
+      }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
+      details[open] {
+          padding: .5em;
+      }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
+      details[open] summary {
+          border-bottom: 1px solid #aaa;
+          margin-bottom: .5em;
+      }
 
-.App-link {
-  color: #61dafb;
-}
+      
+      .question p {
+        font-size: 12px;
+        color: #2f3640;
+      }
+      
+      .question ul li {
+        font-size: 11px;
+        color: #2f3640;
+      }
+      
+      .filter-user {
+        width: 92%;;
+        height: 50px;
+        border-radius: 100px;
+        margin-bottom: 10px;
+        border:2px solid #81ecec;
+        color: #8395a7;
+        outline: none;
+        font-size: 20px;
+        font-weight: thin;
+        padding: 0 20px;
+      }
+      
+      .user {
+        display: flex;
+        flex-direction: row;    
+        margin-bottom: 10px;
+        background: #ecf0f1;
+        border-radius: 10px;
+        overflow: hidden;
+        transition: all .2s ease-in;
+      }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
+      
+      .user:hover {
+        background: #81ecec;
+        cursor: pointer;
+      }
+
+      .header {
+        display: flex;
+        flex-direction: column;
+        padding: 0 10px;
+      }
+      
+      
+      .header .name {
+        font-size: 30px;
+      }
+      
+      .user-button {
+        margin: 10px 0;
+        width: 100px;
+        outline: none;
+        border: none;
+        border-radius: 10px;
+        background: #2980b9;
+        padding: 5px;
+        color: white;
+        cursor: pointer;
+      }
+      
+      .user-button:hover {
+        background: #3498db;
+      }
